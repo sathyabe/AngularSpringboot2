@@ -1,0 +1,33 @@
+<!-- <script>
+    function validateForm() {
+      var user = document.forms["login"]["email"].value;
+      var passwd = document.forms["login"]["password"].value;
+      if ((user == "admin@outlook.com")&&(passwd =="adminpassword")) {
+        return true;
+      }
+      else{
+        alert("Access Denied");
+        return false;
+      }
+    }
+    </script>    -->
+    
+  <h1>Login to LMS</h1>
+  <div class="container">
+      <form name="login" (ngSubmit) = "onSubmit()" >
+          <div class="row">
+              <label class="text-black" for="email">E-mail</label> 
+              <input type="email" 
+              [(ngModel)] = "employee.username" name="username" id="email" class="form-control" required>
+          </div>
+          <div class="row ">
+              <label class="text-black" for="lname">Password</label>
+              <input type="password" 
+              [(ngModel)] = "employee.password" name="password" id="password" class="form-control" required>
+              </div>
+          <br>
+          <div class="row">
+              <input type="submit" value="Log-in" class="btn btn-primary">
+          </div>
+      </form>
+  </div>

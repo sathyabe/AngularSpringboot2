@@ -1,0 +1,41 @@
+<h3> Employee Report</h3>
+<div>
+    <div>
+        <label> <b> First Name: </b></label> {{employee.firstName}}
+    </div>
+    <div>
+        <label> <b> Last Name: </b></label> {{employee.lastName}}
+    </div>
+    <div>
+        <label> <b> Email Id: </b></label> {{employee.emailId}}
+    </div>
+    <div>
+        <label> <b> Band/Grade: </b></label> {{employee.band}}
+    </div>
+    <div>
+        <label> <b> Skills: </b></label> {{employee.skills}}
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h3>Employee Report</h3>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Id</th>
+                <th>Band/Grade</th>
+                <th>Skills</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> {{employee.firstName}}</td>
+                    <td> {{employee.lastName}}</td>
+                    <td> {{employee.emailId}}</td>
+                    <td> {{employee.band}}</td>
+                    <td> {{employee.skills}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

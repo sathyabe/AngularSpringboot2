@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Course details</h3>
+    <p>This page shows the employee details from typescript variables</p>
+  </div>
+<div class="container">
+    <div class="jumbotron">
+        <h3>{{title}}</h3>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <th>ID</th>
+                <th>Course Name</th>
+                <th>Enrollments</th>
+                <th>Hours</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of courses">
+                    <td> {{c.id}}</td>
+                    <td> {{c.name}}</td>
+                    <td> {{c.enrolcount}}</td>
+                    <td> {{c.hours}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
